@@ -1,0 +1,22 @@
+{
+  "id": "locale-timezone-pair",
+  "name": "Locale and time-zone fingerprint pair",
+  "category": "Fingerprinting",
+  "description": "A page queried both the time-zone offset and resolved locale or time-zone options during the same visit.",
+  "severity": "medium",
+  "match": {
+    "mode": "all",
+    "signals": [
+      {
+        "indicatorId": "locale-timezone",
+        "api": "Locale",
+        "action": "timezone-offset"
+      },
+      {
+        "indicatorId": "locale-timezone",
+        "api": "Locale",
+        "action": "resolved-options"
+      }
+    ]
+  }
+}

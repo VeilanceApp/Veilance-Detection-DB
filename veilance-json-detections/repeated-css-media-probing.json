@@ -1,0 +1,11 @@
+{
+  "id": "repeated-css-media-probing",
+  "name": "Repeated CSS media probing",
+  "category": "Fingerprinting",
+  "description": "A page queried CSS media or user-preference characteristics at least twelve times.",
+  "severity": "low",
+  "match": {
+    "indicatorId": "css-media-queries",
+    "minCount": 12
+  }
+}

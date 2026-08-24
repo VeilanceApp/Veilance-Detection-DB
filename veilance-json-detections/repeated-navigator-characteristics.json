@@ -1,0 +1,11 @@
+{
+  "id": "repeated-navigator-characteristics",
+  "name": "Repeated navigator characteristic probing",
+  "category": "Fingerprinting",
+  "description": "A page queried browser, platform, CPU, memory, language, plugin, or related navigator characteristics at least twelve times.",
+  "severity": "low",
+  "match": {
+    "indicatorId": "navigator-characteristics",
+    "minCount": 12
+  }
+}

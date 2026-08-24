@@ -1,0 +1,11 @@
+{
+  "id": "repeated-performance-timing-probing",
+  "name": "Repeated performance timing probing",
+  "category": "Fingerprinting",
+  "description": "A page accessed or observed browser performance timing information at least ten times.",
+  "severity": "low",
+  "match": {
+    "indicatorId": "performance-timing",
+    "minCount": 10
+  }
+}

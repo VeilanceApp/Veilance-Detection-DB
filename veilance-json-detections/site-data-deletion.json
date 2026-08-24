@@ -1,0 +1,27 @@
+{
+  "id": "site-data-deletion",
+  "name": "Site data deletion APIs used",
+  "category": "Storage",
+  "description": "A page cleared Web Storage or deleted IndexedDB or Cache Storage data during the visit.",
+  "severity": "low",
+  "match": {
+    "mode": "any",
+    "signals": [
+      {
+        "indicatorId": "browser-storage",
+        "api": "Storage",
+        "action": "clear"
+      },
+      {
+        "indicatorId": "browser-storage",
+        "api": "IndexedDB",
+        "action": "delete"
+      },
+      {
+        "indicatorId": "browser-storage",
+        "api": "CacheStorage",
+        "action": "delete"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "drm-key-system-probe",
+  "name": "DRM key-system probing",
+  "category": "Fingerprinting",
+  "description": "A page checked support for a protected-media key system, which can reveal media and DRM capabilities.",
+  "severity": "low",
+  "match": {
+    "indicatorId": "media-capabilities",
+    "api": "EncryptedMedia",
+    "action": "key-system-access"
+  }
+}

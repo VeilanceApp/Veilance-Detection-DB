@@ -1,0 +1,22 @@
+{
+  "id": "persistent-telemetry-pattern",
+  "name": "Persistent telemetry pattern",
+  "category": "Tracking",
+  "description": "A page combined script-visible cookie or storage access, persistent browser storage activity, and repeated beacon transmissions during one visit.",
+  "severity": "medium",
+  "match": {
+    "mode": "all",
+    "signals": [
+      {
+        "indicatorId": "cookie-access"
+      },
+      {
+        "indicatorId": "browser-storage"
+      },
+      {
+        "indicatorId": "beacon",
+        "minCount": 2
+      }
+    ]
+  }
+}

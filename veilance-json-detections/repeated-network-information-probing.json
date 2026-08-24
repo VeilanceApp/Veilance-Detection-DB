@@ -1,0 +1,11 @@
+{
+  "id": "repeated-network-information-probing",
+  "name": "Repeated network characteristic probing",
+  "category": "Fingerprinting",
+  "description": "A page queried connection type, throughput, latency, or data-saver characteristics at least four times.",
+  "severity": "medium",
+  "match": {
+    "indicatorId": "network-information",
+    "minCount": 4
+  }
+}

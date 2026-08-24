@@ -1,0 +1,12 @@
+{
+  "id": "automation-flag-probing",
+  "name": "Automation flag probing",
+  "category": "Fingerprinting",
+  "description": "A page read navigator.webdriver, which can be used to distinguish automated browser sessions from normal browsing.",
+  "severity": "medium",
+  "match": {
+    "indicatorId": "navigator-characteristics",
+    "api": "Navigator",
+    "action": "read-webdriver"
+  }
+}

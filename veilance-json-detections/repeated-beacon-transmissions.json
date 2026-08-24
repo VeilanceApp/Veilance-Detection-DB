@@ -1,0 +1,13 @@
+{
+  "id": "repeated-beacon-transmissions",
+  "name": "Repeated beacon transmissions",
+  "category": "Tracking",
+  "description": "A page used sendBeacon at least five times during one visit, indicating repeated background telemetry or event delivery.",
+  "severity": "low",
+  "match": {
+    "indicatorId": "beacon",
+    "api": "Beacon",
+    "action": "send",
+    "minCount": 5
+  }
+}

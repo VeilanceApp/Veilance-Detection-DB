@@ -1,0 +1,12 @@
+{
+  "id": "high-entropy-client-hints",
+  "name": "High-entropy client hints requested",
+  "category": "Fingerprinting",
+  "description": "A page requested high-entropy User-Agent Client Hints that can reveal additional browser and device characteristics.",
+  "severity": "medium",
+  "match": {
+    "indicatorId": "navigator-characteristics",
+    "api": "ClientHints",
+    "action": "high-entropy-values"
+  }
+}

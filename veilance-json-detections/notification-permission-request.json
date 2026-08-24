@@ -1,0 +1,12 @@
+{
+  "id": "notification-permission-request",
+  "name": "Notification permission requested",
+  "category": "Sensitive APIs",
+  "description": "A page requested permission to display browser notifications.",
+  "severity": "medium",
+  "match": {
+    "indicatorId": "notifications",
+    "api": "Notification",
+    "action": "request-permission"
+  }
+}

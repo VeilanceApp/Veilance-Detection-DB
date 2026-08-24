@@ -1,0 +1,11 @@
+{
+  "id": "repeated-media-capability-probing",
+  "name": "Repeated media capability probing",
+  "category": "Fingerprinting",
+  "description": "A page probed media decoding, encoding, or protected-media capabilities at least five times.",
+  "severity": "low",
+  "match": {
+    "indicatorId": "media-capabilities",
+    "minCount": 5
+  }
+}

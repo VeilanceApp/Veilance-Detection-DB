@@ -1,0 +1,12 @@
+{
+  "id": "webrtc-data-channel-created",
+  "name": "WebRTC data channel created",
+  "category": "Network",
+  "description": "A page created a WebRTC data channel. The current built-in WebRTC finding does not count data-channel creation by itself.",
+  "severity": "low",
+  "match": {
+    "indicatorId": "webrtc",
+    "api": "WebRTC",
+    "action": "create-data-channel"
+  }
+}

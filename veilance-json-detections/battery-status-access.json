@@ -1,0 +1,12 @@
+{
+  "id": "battery-status-access",
+  "name": "Battery status accessed",
+  "category": "Fingerprinting",
+  "description": "A page requested browser battery-status information, which can contribute to a device profile where the API is available.",
+  "severity": "low",
+  "match": {
+    "indicatorId": "battery",
+    "api": "Battery",
+    "action": "read-status"
+  }
+}

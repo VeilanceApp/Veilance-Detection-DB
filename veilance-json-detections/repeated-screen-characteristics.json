@@ -1,0 +1,11 @@
+{
+  "id": "repeated-screen-characteristics",
+  "name": "Repeated screen characteristic probing",
+  "category": "Fingerprinting",
+  "description": "A page queried screen geometry, color depth, orientation, or device-pixel-ratio characteristics at least eight times.",
+  "severity": "low",
+  "match": {
+    "indicatorId": "screen-characteristics",
+    "minCount": 8
+  }
+}

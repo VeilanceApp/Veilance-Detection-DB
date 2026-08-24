@@ -1,0 +1,22 @@
+{
+  "id": "clipboard-write-access",
+  "name": "Clipboard write requested",
+  "category": "Sensitive APIs",
+  "description": "A page attempted to write data to the system clipboard. Veilance records only the API operation, not clipboard contents.",
+  "severity": "low",
+  "match": {
+    "mode": "any",
+    "signals": [
+      {
+        "indicatorId": "clipboard",
+        "api": "Clipboard",
+        "action": "write"
+      },
+      {
+        "indicatorId": "clipboard",
+        "api": "Clipboard",
+        "action": "write-text"
+      }
+    ]
+  }
+}

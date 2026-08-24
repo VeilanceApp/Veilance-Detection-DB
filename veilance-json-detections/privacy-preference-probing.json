@@ -1,0 +1,22 @@
+{
+  "id": "privacy-preference-probing",
+  "name": "Privacy preference probing",
+  "category": "Privacy",
+  "description": "A page checked Do Not Track or Global Privacy Control browser signals.",
+  "severity": "low",
+  "match": {
+    "mode": "any",
+    "signals": [
+      {
+        "indicatorId": "navigator-characteristics",
+        "api": "Navigator",
+        "action": "read-do-not-track"
+      },
+      {
+        "indicatorId": "navigator-characteristics",
+        "api": "Navigator",
+        "action": "read-global-privacy-control"
+      }
+    ]
+  }
+}

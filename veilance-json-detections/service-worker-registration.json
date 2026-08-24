@@ -1,0 +1,12 @@
+{
+  "id": "service-worker-registration",
+  "name": "Service worker registered",
+  "category": "Persistence",
+  "description": "A page registered a service worker, allowing background-capable site functionality and persistent application behavior within browser controls.",
+  "severity": "low",
+  "match": {
+    "indicatorId": "browser-storage",
+    "api": "ServiceWorker",
+    "action": "register"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "permission-enumeration",
+  "name": "Repeated permission-state probing",
+  "category": "Sensitive APIs",
+  "description": "A page queried browser permission state at least four times during one visit.",
+  "severity": "medium",
+  "match": {
+    "indicatorId": "permission-queries",
+    "minCount": 4
+  }
+}

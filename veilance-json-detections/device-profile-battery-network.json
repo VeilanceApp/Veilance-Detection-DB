@@ -1,0 +1,22 @@
+{
+  "id": "device-profile-battery-network",
+  "name": "Device profile assembled from battery and network signals",
+  "category": "Fingerprinting",
+  "description": "A page combined multiple navigator characteristics with network information and battery-status access during the same visit.",
+  "severity": "medium",
+  "match": {
+    "mode": "all",
+    "signals": [
+      {
+        "indicatorId": "navigator-characteristics",
+        "minCount": 2
+      },
+      {
+        "indicatorId": "network-information"
+      },
+      {
+        "indicatorId": "battery"
+      }
+    ]
+  }
+}
