@@ -1,0 +1,27 @@
+{
+  "id": "service-worker-telemetry-persistence",
+  "name": "Service worker with telemetry activity",
+  "category": "Tracking",
+  "description": "A page registered a service worker, used browser storage more than once, and sent repeated beacons during the same visit.",
+  "severity": "medium",
+  "match": {
+    "mode": "all",
+    "signals": [
+      {
+        "indicatorId": "browser-storage",
+        "api": "ServiceWorker",
+        "action": "register"
+      },
+      {
+        "indicatorId": "browser-storage",
+        "minCount": 2
+      },
+      {
+        "indicatorId": "beacon",
+        "api": "Beacon",
+        "action": "send",
+        "minCount": 2
+      }
+    ]
+  }
+}

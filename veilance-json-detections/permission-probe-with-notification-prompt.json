@@ -1,0 +1,21 @@
+{
+  "id": "permission-probe-with-notification-prompt",
+  "name": "Permission probing with notification prompt",
+  "category": "Sensitive APIs",
+  "description": "A page repeatedly queried browser permission state and requested notification permission during the same visit.",
+  "severity": "medium",
+  "match": {
+    "mode": "all",
+    "signals": [
+      {
+        "indicatorId": "permission-queries",
+        "minCount": 4
+      },
+      {
+        "indicatorId": "notifications",
+        "api": "Notification",
+        "action": "request-permission"
+      }
+    ]
+  }
+}

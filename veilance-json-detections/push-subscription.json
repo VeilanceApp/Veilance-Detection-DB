@@ -1,0 +1,12 @@
+{
+  "id": "push-subscription",
+  "name": "Push messaging subscription requested",
+  "category": "Persistence",
+  "description": "A page attempted to create a browser push subscription. Veilance records only the operation and never retains the subscription endpoint or keys.",
+  "severity": "medium",
+  "match": {
+    "indicatorId": "background-persistence",
+    "api": "PushManager",
+    "action": "subscribe"
+  }
+}

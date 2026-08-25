@@ -1,0 +1,25 @@
+{
+  "id": "high-entropy-device-profile",
+  "name": "High-entropy device profile assembled",
+  "category": "Fingerprinting",
+  "description": "A page combined high-entropy User-Agent Client Hints with screen and locale or time-zone characteristics during the same visit.",
+  "severity": "high",
+  "match": {
+    "mode": "all",
+    "signals": [
+      {
+        "indicatorId": "navigator-characteristics",
+        "api": "ClientHints",
+        "action": "high-entropy-values"
+      },
+      {
+        "indicatorId": "screen-characteristics",
+        "minCount": 2
+      },
+      {
+        "indicatorId": "locale-timezone",
+        "minCount": 2
+      }
+    ]
+  }
+}

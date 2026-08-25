@@ -1,0 +1,13 @@
+{
+  "id": "repeated-local-network-probing",
+  "name": "Repeated local-network probing",
+  "category": "Network",
+  "description": "A public website made at least four requests to localhost, private-address, or local-network destinations during one visit. Private destinations are excluded from uploaded telemetry.",
+  "severity": "high",
+  "match": {
+    "indicatorId": "local-network-access",
+    "api": "NetworkRequest",
+    "action": "private-network-request",
+    "minCount": 4
+  }
+}

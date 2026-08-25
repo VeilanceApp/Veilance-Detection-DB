@@ -1,0 +1,22 @@
+{
+  "id": "webrtc-network-profile",
+  "name": "WebRTC network profile assembled",
+  "category": "Fingerprinting",
+  "description": "A page combined WebRTC activity with network information and multiple navigator characteristics during the same visit.",
+  "severity": "medium",
+  "match": {
+    "mode": "all",
+    "signals": [
+      {
+        "indicatorId": "webrtc"
+      },
+      {
+        "indicatorId": "network-information"
+      },
+      {
+        "indicatorId": "navigator-characteristics",
+        "minCount": 2
+      }
+    ]
+  }
+}

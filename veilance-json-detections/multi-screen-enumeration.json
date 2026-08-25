@@ -1,0 +1,12 @@
+{
+  "id": "multi-screen-enumeration",
+  "name": "Connected screen details requested",
+  "category": "Sensitive APIs",
+  "description": "A page requested details about the screens connected to the device. Veilance does not retain display labels or measurements.",
+  "severity": "medium",
+  "match": {
+    "indicatorId": "screen-characteristics",
+    "api": "WindowManagement",
+    "action": "get-screen-details"
+  }
+}

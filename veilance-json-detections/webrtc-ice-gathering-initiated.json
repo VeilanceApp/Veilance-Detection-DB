@@ -1,0 +1,22 @@
+{
+  "id": "webrtc-ice-gathering-initiated",
+  "name": "WebRTC ICE gathering initiated",
+  "category": "Network",
+  "description": "A page created a WebRTC offer and applied a local session description during the same visit. This normally initiates ICE candidate gathering; Veilance never retains candidate addresses.",
+  "severity": "medium",
+  "match": {
+    "mode": "all",
+    "signals": [
+      {
+        "indicatorId": "webrtc",
+        "api": "WebRTC",
+        "action": "create-offer"
+      },
+      {
+        "indicatorId": "webrtc",
+        "api": "WebRTC",
+        "action": "set-local-description"
+      }
+    ]
+  }
+}
