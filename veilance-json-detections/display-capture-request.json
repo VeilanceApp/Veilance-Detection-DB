@@ -1,0 +1,12 @@
+{
+  "id": "display-capture-request",
+  "name": "Screen capture requested",
+  "category": "Sensitive APIs",
+  "description": "A page requested access to a screen, application window, or browser tab. Veilance records only the request and never accesses the resulting media stream.",
+  "severity": "high",
+  "match": {
+    "indicatorId": "media-devices",
+    "api": "MediaDevices",
+    "action": "get-display-media"
+  }
+}

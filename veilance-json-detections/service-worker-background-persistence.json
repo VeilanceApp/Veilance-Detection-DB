@@ -1,0 +1,20 @@
+{
+  "id": "service-worker-background-persistence",
+  "name": "Service worker with background persistence",
+  "category": "Persistence",
+  "description": "A page registered a service worker and also subscribed to push messaging or registered background synchronization during the same visit.",
+  "severity": "medium",
+  "match": {
+    "mode": "all",
+    "signals": [
+      {
+        "indicatorId": "browser-storage",
+        "api": "ServiceWorker",
+        "action": "register"
+      },
+      {
+        "indicatorId": "background-persistence"
+      }
+    ]
+  }
+}

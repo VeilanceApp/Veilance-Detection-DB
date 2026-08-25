@@ -1,0 +1,26 @@
+{
+  "id": "fingerprint-with-beacon-activity",
+  "name": "Fingerprinting and beacon activity combined",
+  "category": "Tracking",
+  "description": "A page combined multiple navigator and screen characteristics with repeated beacon transmissions during the same visit. This correlation does not inspect or infer beacon contents.",
+  "severity": "medium",
+  "match": {
+    "mode": "all",
+    "signals": [
+      {
+        "indicatorId": "navigator-characteristics",
+        "minCount": 4
+      },
+      {
+        "indicatorId": "screen-characteristics",
+        "minCount": 2
+      },
+      {
+        "indicatorId": "beacon",
+        "api": "Beacon",
+        "action": "send",
+        "minCount": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "background-sync-registration",
+  "name": "Background sync registered",
+  "category": "Persistence",
+  "description": "A page registered work to run through the browser's Background Sync API. Veilance never retains the sync tag or task data.",
+  "severity": "medium",
+  "match": {
+    "indicatorId": "background-persistence",
+    "api": "BackgroundSync",
+    "action": "register"
+  }
+}

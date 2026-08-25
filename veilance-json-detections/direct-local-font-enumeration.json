@@ -1,0 +1,12 @@
+{
+  "id": "direct-local-font-enumeration",
+  "name": "Direct local font enumeration",
+  "category": "Sensitive APIs",
+  "description": "A page requested access to locally installed fonts. Veilance records only the API operation and never retains font names or font data.",
+  "severity": "medium",
+  "match": {
+    "indicatorId": "font-probing",
+    "api": "LocalFonts",
+    "action": "query-local-fonts"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "multi-surface-browser-fingerprint",
+  "name": "Multi-surface browser fingerprinting",
+  "category": "Fingerprinting",
+  "description": "A page combined repeated navigator, screen, locale or time-zone, and CSS media queries during the same visit.",
+  "severity": "high",
+  "match": {
+    "mode": "all",
+    "signals": [
+      {
+        "indicatorId": "navigator-characteristics",
+        "minCount": 4
+      },
+      {
+        "indicatorId": "screen-characteristics",
+        "minCount": 4
+      },
+      {
+        "indicatorId": "locale-timezone",
+        "minCount": 2
+      },
+      {
+        "indicatorId": "css-media-queries",
+        "minCount": 4
+      }
+    ]
+  }
+}
